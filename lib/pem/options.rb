@@ -51,7 +51,13 @@ module PEM
                                      env_name: "PEM_FILE_NAME",
                                      description: "The file name of the generated .pem file",
                                      optional: true,
-                                     default_value: '')
+                                     default_value: nil),
+        FastlaneCore::ConfigItem.new(key: :pem_passphrase,
+                                     short_option: "-p",
+                                     env_name: "PEM_PASSPHRASE",
+                                     description: "The password of the generated .pem file",
+                                     optional: true,
+                                     default_value: nil)
       ]
     end
   end

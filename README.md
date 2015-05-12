@@ -100,6 +100,10 @@ You can specify a name for the output file:
 
     pem -n myCustomName.pem
 
+If you want a specific password of the generated .pem file:
+
+    pem -p mypassword
+
 To get a list of available options run:
 
     pem --help
